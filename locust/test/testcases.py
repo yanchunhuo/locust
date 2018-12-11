@@ -41,7 +41,7 @@ def consistent():
     gevent.sleep(0.2)
     return "This is a consistent response"
 
-@app.route("/request_method", methods=["POST", "GET", "HEAD", "PUT", "DELETE", "PATCH"])
+@app.route("/request_method", methods=["POST", "GET", "HEAD", "PUT", "DELETE"])
 def request_method():
     return request.method
 
